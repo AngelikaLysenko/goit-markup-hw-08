@@ -1,0 +1,22 @@
+
+.footer {
+    background: var(--footer-fon);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .container-footer {
+    display: flex;
+  }
+  
+  .footer__info {
+    margin-right: 70px;
+  }
+  
+  .footer__contact-link {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-style: normal;
+    margin-bottom: 9px;
+  }

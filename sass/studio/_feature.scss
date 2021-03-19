@@ -1,0 +1,55 @@
+.feature__main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container .feature {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.feature__title {
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.feature__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.feature__description {
+  width: 270px;
+  justify-content: left;
+  flex-basis: calc(100% / 4 - var(--nav-list-gap));
+}
+
+.feature__img {
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+}
+
+.feature__description {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--paragraf-text-color);
+}
+
+.feature__title-tv,
+.feature__title-clock,
+.feature__title-comp,
+.feature__title-astro {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.14;
+  margin-top: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+}

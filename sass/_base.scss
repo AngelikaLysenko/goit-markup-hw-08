@@ -1,0 +1,32 @@
+:root {
+    --primary-text-color: #212121;
+    --accent-color: #2196f3;
+    --paragraf-text-color: #757575;
+    --main-back-color: #ffffff;
+    --fon-back-hero: #2f303a;
+    --footer-fon: #2f303a;
+    --nav-list-gap: 30px;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  ul {
+    list-style: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }

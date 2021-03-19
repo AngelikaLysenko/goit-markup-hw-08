@@ -1,0 +1,102 @@
+.container-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-header__logo {
+  color: var(--primary-text-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.container-header__logo-web {
+  color: var(--accent-color);
+}
+
+.container-header__nav {
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+}
+
+.container-header__site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 93px;
+}
+
+.container-header__item {
+  padding: 32px 0;
+  margin-right: 50px;
+  position: relative;
+}
+
+.container-header__link {
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+}
+
+.container-header__current {
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+.container-header__contact {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.container-header__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.container-header__mail {
+  margin-right: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--paragraf-text-color);
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
