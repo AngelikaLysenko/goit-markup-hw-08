@@ -1,12 +1,19 @@
 .feature__main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width:$desktop){
   padding-top: 94px;
   padding-bottom: 94px;
+  }
 }
 
 .container .feature {
-  display: flex;
-  justify-content: center;
-  list-style: none;
+  width: 100%;
+  padding: 0 15px;
+  // display: flex;
+  // justify-content: center;
+  // list-style: none;
 }
 
 .feature__title {
@@ -15,16 +22,26 @@
 }
 
 .feature__list {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   margin: 0 auto;
   padding: 0;
 }
 
+
+  .feature__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+
 .feature__description {
-  width: 270px;
-  justify-content: left;
+  width: 100%;
+  // justify-content: left;
   flex-basis: calc(100% / 4 - var(--nav-list-gap));
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--paragraf-text-color);
+  
 }
 
 .feature__img {
@@ -36,20 +53,15 @@
   background-color: #f5f4fa;
 }
 
-.feature__description {
-  font-weight: 400;
-  line-height: 1.71;
-  color: var(--paragraf-text-color);
-}
-
 .feature__title-tv,
 .feature__title-clock,
 .feature__title-comp,
 .feature__title-astro {
   margin-bottom: 10px;
+  margin-top: 30px;
   font-weight: 700;
   line-height: 1.14;
-  margin-top: 30px;
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
 }
