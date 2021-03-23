@@ -1,7 +1,25 @@
 .container-header {
-  display: flex;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @media screen and(min-width:$mobile){
+    // margin-bottom: 16px;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  }
+
+  @media screen and(min-width:$tablet){
+     display: flex;
   justify-content: center;
   align-items: center;
+  }
+  @media screen and(min-width:$desktop){
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 }
 
 .container-header__logo {
@@ -11,6 +29,17 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  
+  @media screen and(min-width:480px){
+    margin-right: 240px;
+  }
+  @media screen and(min-width:$tablet){
+    margin-right: auto;
+  }
+  @media screen and(min-width:$desktop){
+    margin-right: 93px;
+  }
+  
 }
 
 .container-header__logo-web {
@@ -21,16 +50,56 @@
   font-weight: 500;
   line-height: 1.14;
   color: var(--primary-text-color);
+
+  @media screen and(min-width:$mobile){
+    display: none;
+  }
+  @media screen and(min-width:$tablet){
+    display: block;
+  }
+  @media screen and(min-width:$desktop){
+    display: block;
+  }
 }
 
 .container-header__site {
-  display: flex;
+  @media screen and(min-width:$tablet){
+     display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: 93px;
+  margin-left: 88px;
+  }
+ 
+  @media screen and(min-width:$desktop){
+    // margin-left: 93px;
+  }
+  
 }
 
+.team__icon-header{
+    color: var(--primary-text-color);
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: fill 250ms var(--timing-function);
+    
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+ 
+    @media screen and(min-width:$tablet){
+      display: none;
+  
+    }
+    @media screen and(min-width:$desktop){
+      display: none;
+      // margin-left: 276px;
+    }
+}
 .container-header__item {
   padding: 32px 0;
   margin-right: 50px;
@@ -74,23 +143,37 @@
 }
 
 .container-header__contact {
-  display: flex;
+  // display: flex;
+  // justify-content: center;
+  // margin-left: auto;
+  @media screen and(min-width:$mobile){
+    display: none;
+  }
+  @media screen and(min-width:$tablet){
+    display: block;
+    margin-left: auto;
+  }
+  @media screen and(min-width:$desktop){
+    display: flex;
   justify-content: center;
   margin-left: auto;
+  }
 }
 
 .container-header__icon {
-  margin-right: 10px;
   fill: currentColor;
+  @media screen and(min-width:$tablet){
+     margin-right: 8px;
+  }
+  @media screen and(min-width:$desktop){
+    margin-right: 10px;
+  }
 }
 
 .container-header__mail {
-  margin-right: 30px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--paragraf-text-color);
   transition: color 250ms var(--timing-function);
@@ -98,5 +181,16 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and(min-width:$tablet){
+    font-size: 12px;
+  line-height: 14px;
+  }
+
+  @media screen and(min-width:$desktop){
+     margin-right: 30px;
+     font-size: 14px;
+    line-height: 16px;
   }
 }

@@ -1,5 +1,5 @@
 .team {
-  padding-top: 94px;
+  // padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
@@ -7,16 +7,42 @@
 .team__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.166;
   text-align: center;
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
+
+  @media screen and(min-width:320px){
+    font-size: 24px;
+    line-height: 1.375;
+    margin-bottom: 30px;
+  }
+
+  @media screen and(min-width:$tablet){
+    font-size: 36px;
+  line-height: 1.166;
+    margin-bottom: 50px;
+  }
 }
 
 .team__description {
-  display: flex;
-  justify-content: space-between;
+  li{
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and(min-width:$tablet) {
+    display: flex;
+   flex-wrap: wrap;
+   margin-left: -30px;
+   margin-top: -30px;
+    }
+    @media screen and(min-width:$desktop) {
+      display: flex;
+      justify-content: center;
+      }
 }
 
 .team__fon {
@@ -24,6 +50,22 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and(min-width:$tablet) {
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+    &:not(:last-child) {
+      margin-bottom: unset;
+  }
+  }
+  @media screen and(min-width:$desktop){
+    width: 270px;
+  }
+}
+
+.picture {
+  width: 100%;
 }
 
 .team__name {

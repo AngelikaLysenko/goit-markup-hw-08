@@ -1,5 +1,10 @@
-.achievements {
+.section__achievements {
   padding-bottom: 94px;
+  display: none;
+
+  @media screen and(min-width:$desktop){
+    display: block;
+  }
 }
 
 .achievements__title {
