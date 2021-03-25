@@ -31,7 +31,7 @@
   text-decoration: none;
   
   @media screen and(min-width:480px){
-    margin-right: 240px;
+    // margin-right: 240px;
   }
   @media screen and(min-width:$tablet){
     margin-right: auto;
@@ -65,10 +65,9 @@
 .container-header__site {
   @media screen and(min-width:$tablet){
      display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin-left: 88px;
   }
  
   @media screen and(min-width:$desktop){

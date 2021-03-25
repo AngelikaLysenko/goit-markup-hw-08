@@ -19,6 +19,7 @@
 
   <header class="container">
     <div class="container-header">
+
       <a href="./studio.html" class="container-header__logo"><span
           class="container-header__logo-web">Web</span>Studio</a>
       <nav class="container-header__nav">
@@ -250,7 +251,12 @@
           <div class="team__fon">
             <ul class="team__list">
               <li class="team__item">
-                <img class="picture" src="./images/marketing.jpg" alt="Николай Тарасов" width="270" />
+                <img class="picture" 
+                srcset="
+                .images/nikolay.jpg      320w,
+                .images/nikolay@2x.jpg   640w"
+
+                src="./images/marketing.jpg" alt="Николай Тарасов" width="270" />
 
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__specialization">Marketing</p>
@@ -534,5 +540,56 @@
   </div> 
 
   <script src="./js/modal.js"></script> 
+
+  <!-- Mobile menu -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+
+    <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+    
+        <svg width="44" height="44" fill="currentColor">
+            <use class="icon-cross" href="./images/icon.svg#icon-close"> </use>
+    
+        </svg>
+    </button>
+    <nav class="mobile-nav">
+        <ul class="mobile-list">
+            <li class="mobile-item">
+            <a class="mobile-link" href="index.html">студия</a>    
+            </li>
+            <li class="mobile-item"> 
+                <a class="mobile-link" href="portfolio.html">портфолио</a>
+            </li>
+            <li class="mobile-item"> 
+                <a class="mobile-link" href="#">контакты</a>
+            </li>
+        </ul>
+        <ul class="mobile-list__contacts">
+            <li class="mobile-item__contacts"> 
+                <a class="mobile-item__number" href="+380961111111"></a>
+            </li>
+            <li class="mobile-item__contacts">
+            <a class="mobile-item__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>    
+            </li>
+        </ul>
+    </nav>
+    <ul class="mobile-network__list">
+    <li class="mobile-network__item">
+        <a class="mobile-network__link" href="#">Instagram</a>
+    </li>
+    <li class="mobile-network__item"><a class="mobile-network__link" href="#">Twitter</a></li>
+    <li class="mobile-network__item"><a class="mobile-network__link" href="#">Facebook</a></li>
+    <li class="mobile-network__item"><a class="mobile-network__link" href="#">Linkedin</a></li>
+    </ul>
+    
+        </div>
+
+<script src="./js/modal.js"></script> 
+<script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+></script>
+<script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
