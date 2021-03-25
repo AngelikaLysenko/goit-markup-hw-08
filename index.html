@@ -5,7 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
-  <link rel="stylesheet" href="./stash/modern-normalize.css" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"
+      integrity="sha512-sqIVMkf5f8XGYI/UZYGs7wODxlUeoj9JknataPfUwtvrSKWMHrMXGZ7Evb6nabFYJQG15vFFyALe6r0nWCD1Ug=="
+      crossorigin="anonymous"
+    />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     rel="stylesheet"
@@ -143,15 +148,15 @@
         <h2 class="achievements__title">Чем мы занимаемся</h2>
         <ul class="achievements__list">
           <li class="achievements__image">
-            <img src="./images/img1.jpg" alt="работа с кодом" width="370" />
+            <img srcset="./images/desktop.jpg 1x, ./images/Desktop@2x.jpg 2x" src="./images/img1.jpg" alt="работа с кодом" width="370" />
             <p class="achievements__picture-title">десктопные приложения</p>
           </li>
           <li class="achievements__image">
-            <img src="./images/img2.jpg" alt="тестрование телефона" width="370" />
+            <img srcset="./images/mobile.jpg 1x, ./images/mobile@2x.jpg 2x" src="./images/img2.jpg" alt="тестрование телефона" width="370" />
             <p class="achievements__picture-title">мобильные приложения</p>
           </li>
           <li class="achievements__image">
-            <img src="./images/img3.jpg" alt="работа с планшетом" width="370" />
+            <img srcset="./images/designer.jpg 1x, ./images/designer@2x.jpg 2x" src="./images/img2.jpg" src="./images/img3.jpg" alt="работа с планшетом" width="370" />
             <p class="achievements__picture-title">дизайнерские решения</p>
           </li>
         </ul>
@@ -167,7 +172,7 @@
           <div class="team__fon">
             <ul class="team__list">
               <li class="team__item">
-                <img class="picture" src="./images/productdesigner.jpg" alt="Игорь Демьяненко" width="270" />
+                <img class="picture" srcset="./images/productdesigner.jpg 1x, ./images/productdesigner@2x.jpg 2x" src="./images/productdesigner.jpg" alt="Игорь Демьяненко" width="270" />
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__specialization">
                   Product Designer
@@ -210,7 +215,7 @@
           <div class="team__fon">
             <ul class="team__list">
               <li class="team__item">
-                <img class="picture" src="./images/frontend.jpg" alt="Ольга Репина" width="270" />
+                <img class="picture" srcset="./images/frontend.jpg 1x, ./images/frontend@2x.jpg 2x" src="./images/frontend.jpg" alt="Ольга Репина" width="270" />
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__specialization">
                   Frontend Developer
@@ -252,11 +257,9 @@
           <div class="team__fon">
             <ul class="team__list">
               <li class="team__item">
-                <img class="picture" 
-                srcset="
-                .images/nikolay.jpg      320w,
-                .images/nikolay@2x.jpg   640w"
-
+                <img class="picture" srcset="./images/marketingN.jpg 1x, ./images/marketingN@2x.jpg 2x"
+        
+            
                 src="./images/marketing.jpg" alt="Николай Тарасов" width="270" />
 
                 <h3 class="team__name">Николай Тарасов</h3>
@@ -299,7 +302,7 @@
           <div class="team__fon">
             <ul class="team__list">
               <li class="team__item">
-                <img class="picture" src="./images/uidesigner.jpg" alt="Михаил Ермаков" width="270" />
+                <img class="picture" srcset="./images/uidesignerM.jpg 1x, ./images/uidesigner@2x.jpg 2x" src="./images/uidesigner.jpg" alt="Михаил Ермаков" width="270" />
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__specialization">UI Designer</p>
               </li>
@@ -464,6 +467,46 @@
       </div>
     </div>
   </footer>
+<!-- Mobile menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+
+  <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+  
+      <svg width="44" height="44" fill="currentColor">
+          <use class="icon-cross" href="./images/icon.svg#icon-close"> </use>
+  
+      </svg>
+  </button>
+  <nav class="mobile-nav">
+      <ul class="mobile-list">
+          <li class="mobile-item">
+          <a class="mobile-link" href="index.html">студия</a>    
+          </li>
+          <li class="mobile-item"> 
+              <a class="mobile-link" href="portfolio.html">портфолио</a>
+          </li>
+          <li class="mobile-item"> 
+              <a class="mobile-link" href="#">контакты</a>
+          </li>
+      </ul>
+      <ul class="mobile-list__contacts">
+          <li class="mobile-item__contacts"> 
+              <a class="mobile-item__number" href="+380961111111"></a>
+          </li>
+          <li class="mobile-item__contacts">
+          <a class="mobile-item__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>    
+          </li>
+      </ul>
+  </nav>
+  <ul class="mobile-network__list">
+  <li class="mobile-network__item">
+      <a class="mobile-network__link" href="#">Instagram</a>
+  </li>
+  <li class="mobile-network__item"><a class="mobile-network__link" href="#">Twitter</a></li>
+  <li class="mobile-network__item"><a class="mobile-network__link" href="#">Facebook</a></li>
+  <li class="mobile-network__item"><a class="mobile-network__link" href="#">Linkedin</a></li>
+  </ul>
+</div>
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -540,56 +583,8 @@
 
   </div> 
 
-  <script src="./js/modal.js"></script> 
-
-  <!-- Mobile menu -->
-  <div class="menu-container js-menu-container" id="mobile-menu">
-
-    <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
-    
-        <svg width="44" height="44" fill="currentColor">
-            <use class="icon-cross" href="./images/icon.svg#icon-close"> </use>
-    
-        </svg>
-    </button>
-    <nav class="mobile-nav">
-        <ul class="mobile-list">
-            <li class="mobile-item">
-            <a class="mobile-link" href="index.html">студия</a>    
-            </li>
-            <li class="mobile-item"> 
-                <a class="mobile-link" href="portfolio.html">портфолио</a>
-            </li>
-            <li class="mobile-item"> 
-                <a class="mobile-link" href="#">контакты</a>
-            </li>
-        </ul>
-        <ul class="mobile-list__contacts">
-            <li class="mobile-item__contacts"> 
-                <a class="mobile-item__number" href="+380961111111"></a>
-            </li>
-            <li class="mobile-item__contacts">
-            <a class="mobile-item__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>    
-            </li>
-        </ul>
-    </nav>
-    <ul class="mobile-network__list">
-    <li class="mobile-network__item">
-        <a class="mobile-network__link" href="#">Instagram</a>
-    </li>
-    <li class="mobile-network__item"><a class="mobile-network__link" href="#">Twitter</a></li>
-    <li class="mobile-network__item"><a class="mobile-network__link" href="#">Facebook</a></li>
-    <li class="mobile-network__item"><a class="mobile-network__link" href="#">Linkedin</a></li>
-    </ul>
-    
-        </div>
-
-<script
-defer
-src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-crossorigin="anonymous"
-></script>
+ 
+<script src="./js/modal.js"></script> 
 <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

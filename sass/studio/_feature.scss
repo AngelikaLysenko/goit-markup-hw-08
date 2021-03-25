@@ -2,18 +2,15 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and(min-width:$desktop){
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and(min-width:$desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
 .container .feature {
   width: 100%;
   padding: 0 15px;
-  // display: flex;
-  // justify-content: center;
-  // list-style: none;
 }
 
 .feature__title {
@@ -22,46 +19,42 @@
 }
 
 .feature__list {
-  
   margin: 0 auto;
   padding: 0;
 
   @media screen and(min-width:$tablet) {
-  display: flex;
- flex-wrap: wrap;
- margin-left: -30px;
- margin-top: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
 .feature__item {
   width: 100%;
-  
+
   &:not(:last-child) {
     margin-bottom: 30px;
-}
-@media screen and(min-width:$tablet) {
-  width: 354px;
-  margin-left: 30px;
-  margin-top: 30px;
-  &:not(:last-child) {
-    margin-bottom: unset;
-}
-}
-@media screen and(min-width:$desktop){
-  width: 270px;
-}
+  }
+  @media screen and(min-width:$tablet) {
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+    &:not(:last-child) {
+      margin-bottom: unset;
+    }
+  }
+  @media screen and(min-width:$desktop) {
+    width: 270px;
+  }
 }
 
-  
 .feature__description {
   width: 100%;
-  // justify-content: left;
   flex-basis: calc(100% / 4 - var(--nav-list-gap));
   font-weight: 400;
   line-height: 1.71;
   color: var(--paragraf-text-color);
-  
 }
 
 .feature__img {

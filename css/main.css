@@ -80,7 +80,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    width: 480px;
   }
 }
 
@@ -124,6 +124,7 @@ body {
 @media screen and (min-width: 768px) {
   .container-header__logo {
     margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -141,21 +142,10 @@ body {
   font-weight: 500;
   line-height: 1.14;
   color: var(--primary-text-color);
-}
-
-@media screen and (min-width: 480px) {
-  .container-header__nav {
-    display: none;
-  }
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .container-header__nav {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .container-header__nav {
     display: block;
   }
@@ -244,10 +234,8 @@ body {
   border-radius: 2px;
 }
 
-@media screen and (min-width: 480px) {
-  .container-header__contact {
-    display: none;
-  }
+.container-header__contact {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -670,6 +658,7 @@ body {
 
 .checkbox__text {
   font-weight: 400;
+  font-size: 12px;
   letter-spacing: 0.03em;
   color: var(--paragraf-text-color);
   margin-left: 20px;
@@ -1553,6 +1542,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__button-contact {
     margin-left: 12px;
+    margin-top: 0;
   }
 }
 
@@ -1751,15 +1741,12 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   .card__set {
-    margin-left: calc(-1*30px);
-    margin-top: calc(-1*30px);
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
@@ -1785,11 +1772,16 @@ button {
 
 @media screen and (min-width: 767px) {
   .card__item {
-    -ms-flex-preferred-size: calc(100%/2 -30px);
-        flex-basis: calc(100%/2 -30px);
-    margin-left: 30px;
+    -ms-flex-preferred-size: calc(100% / 2 -30px);
+        flex-basis: calc(100% / 2 -30px);
+    margin-left: 15px;
     margin-top: 30px;
   }
+}
+
+.card__item:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card__img {
@@ -1826,11 +1818,6 @@ button {
 .card__item:hover .card__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-}
-
-.card__item:hover {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card__overlay-text {
@@ -1902,12 +1889,8 @@ button {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-}
-
-.menu-container .menu-button {
-  position: absolute;
-  top: 15px;
-  right: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .menu-toggle {
@@ -1941,8 +1924,14 @@ button {
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02;
-  color: #000;
+  color: #212121;
   text-transform: capitalize;
+  -webkit-transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
+}
+
+.mobile-link:hover, .mobile-link:focus {
+  color: #2196f3;
 }
 
 .mobile-list__contacts {
@@ -1954,6 +1943,11 @@ button {
 
 .mobile-item__contacts {
   margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .mobile-item__number {
@@ -1962,10 +1956,6 @@ button {
   line-height: 1.333;
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-
-.mobile-item__contacts {
-  margin-bottom: 32px;
 }
 
 .mobile-item__mail {
@@ -1987,7 +1977,7 @@ button {
       flex-wrap: wrap;
 }
 
-.mobile-network__list .mobile-network__link {
+.mobile-network__link {
   font-weight: 500;
   font-style: 18px;
   line-height: 1.22;
@@ -1995,7 +1985,7 @@ button {
   color: #2196f3;
 }
 
-.mobile-network__item:nth-child(-n+3):after {
+.mobile-network__item:nth-child(-n + 3):after {
   content: "";
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transform: rotate(90deg);

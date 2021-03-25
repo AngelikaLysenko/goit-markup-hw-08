@@ -8,7 +8,6 @@
 }
 
 .modal {
-  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -21,22 +20,6 @@
   border-radius: 4px;
   display: inline-block;
   justify-content: space-between;
-
-
-  // @media screen and(min-width:$mobile){
-  //   max-width: 450px;
-  // max-height: 609px;
-  // }
-
-  // @media screen and(min-width:$tablet){
-  //   max-width: 450px;
-  // max-height: 609px;
-  // }
-
-  // @media screen and(min-width:$desktop){
-  //   max-width: 528px;
-  // max-height: 581px;
-  // }
 }
 
 .modal__title-overlay {
