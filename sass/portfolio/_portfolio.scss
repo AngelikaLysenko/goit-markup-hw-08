@@ -33,6 +33,11 @@
 
 .portfolio__button-item:not(:last-child) {
   margin-right: 8px;
+  
+  @media screen and(min-width:$mobile) {
+    margin-top: 15px;
+  }
+  
 }
 
 /*button*/
@@ -70,6 +75,7 @@ button {
   height: 38px;
   transition: color 250ms var(--timing-function);
   border-radius: 4px;
+  
 }
 
 .portfolio__button-all:hover,
