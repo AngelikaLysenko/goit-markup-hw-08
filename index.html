@@ -20,6 +20,12 @@
   <header class="container">
     <div class="container-header">
 
+      <button class="menu-toggle js-open-menu" aria-expended="true" aria-controls="mobile-menu">
+        <svg width="44" height="44" fill="currentColor" class="team__icon-header">
+            <use class="icon-menu" href="./images/icon.svg#icon-menu_mobile"></use>
+          </svg>
+    </button>
+
       <a href="./studio.html" class="container-header__logo"><span
           class="container-header__logo-web">Web</span>Studio</a>
       <nav class="container-header__nav">
@@ -52,11 +58,6 @@
             +38 096 111 11 11</a>
         </li>
       </ul>
-      <a href="#">
-        <svg class="team__icon-header">
-          <use href="./images/icon.svg#icon-menu_mobile"></use>
-        </svg>
-      </a>
     </div>
   </header> 
 
@@ -583,7 +584,6 @@
     
         </div>
 
-<script src="./js/modal.js"></script> 
 <script
 defer
 src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
