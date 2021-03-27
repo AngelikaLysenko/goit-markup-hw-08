@@ -31,7 +31,7 @@
   }
 }
 
-.portfolio__button-item:not(:last-child) {
+.portfolio__button-item {
   margin-right: 8px;
   
   @media screen and(min-width:$mobile) {

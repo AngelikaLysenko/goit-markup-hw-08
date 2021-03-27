@@ -49,6 +49,7 @@
 
   @media screen and(min-width:$desktop) {
     align-items: start;
+    margin-bottom: 0;
   }
 }
 
@@ -99,6 +100,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and(min-width:$desktop) {
+      align-items: start;
+    }
   }
 }
 
@@ -107,6 +112,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and(min-width:$desktop) {
+    align-items: start;
+    margin-bottom: 0;
+  }
 }
 
 .footer__enjoyus {
@@ -203,6 +212,10 @@
   @media screen and(min-width:768px) {
     align-items: center;
   }
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__input {
@@ -240,6 +253,9 @@
   cursor: pointer;
   text-align: center;
   margin-bottom: 20px;
+  @media screen and(min-width:$desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__button-contact {

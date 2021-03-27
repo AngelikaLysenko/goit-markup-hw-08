@@ -43,6 +43,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
+  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (min-width: 480px) {
@@ -67,6 +68,10 @@ body {
   display: block;
   min-width: 100%;
   height: auto;
+}
+
+.container-header {
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 480px) {
@@ -95,6 +100,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 0;
   }
 }
 
@@ -109,6 +115,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 0;
   }
 }
 
@@ -866,13 +873,14 @@ body {
 }
 
 .team {
+  padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
 .team__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.166;
   text-align: center;
   margin: 0;
@@ -882,13 +890,20 @@ body {
 
 @media screen and (min-width: 320px) {
   .team__title {
-    font-size: 24px;
     line-height: 1.375;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .team__title {
+    font-size: 28px;
+    line-height: 1.166;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .team__title {
     font-size: 36px;
     line-height: 1.166;
@@ -1016,15 +1031,12 @@ body {
 }
 
 .client {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .client__title {
   font-weight: 700;
-  width: 390px;
-  height: 42px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -1040,6 +1052,7 @@ body {
     font-size: 28px;
     line-height: 1.178;
     margin-bottom: 30px;
+    text-align: center;
   }
 }
 
@@ -1241,6 +1254,7 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    margin-bottom: 0;
   }
 }
 
@@ -1321,6 +1335,14 @@ body {
   }
 }
 
+@media screen and (min-width: 480px) and (min-width: 1200px) {
+  .footer__contact-link {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
 .footer__social-icon {
   margin-bottom: 60px;
   display: -webkit-box;
@@ -1333,6 +1355,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__social-icon {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-bottom: 0;
+  }
 }
 
 .footer__enjoyus {
@@ -1480,6 +1511,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__form-mail {
+    margin-bottom: 0;
+  }
+}
+
 .footer__input {
   width: 100%;
   height: 50px;
@@ -1521,6 +1558,12 @@ body {
   cursor: pointer;
   text-align: center;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__button {
+    margin-bottom: 0;
+  }
 }
 
 .footer__button-contact {
@@ -1570,11 +1613,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #ececec;
-  padding: 24px 15px;
+  padding: 0px 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container-header {
     max-width: 480px;
   }
@@ -1622,6 +1664,29 @@ body {
   .menu-button {
     display: none;
   }
+}
+
+.container-header__portfolio {
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+  -webkit-transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
+}
+
+.container-header__portfolio:hover, .container-header__portfolio:focus {
+  color: var(--accent-color);
+}
+
+.container-header__portfolio::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .container__section-portfolio {
@@ -1674,8 +1739,14 @@ body {
   }
 }
 
-.portfolio__button-item:not(:last-child) {
+.portfolio__button-item {
   margin-right: 8px;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio__button-item {
+    margin-top: 15px;
+  }
 }
 
 /*button*/
@@ -1805,7 +1876,7 @@ button {
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-  padding: 63px 24px;
+  padding: 63px 23px;
   background: rgba(33, 150, 243, 0.9);
 }
 

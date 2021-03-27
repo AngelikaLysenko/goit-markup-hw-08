@@ -10,6 +10,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
+  border-bottom: 1px solid #ececec;
 
   @media screen and(min-width:$mobile) {
     max-width: 480px;
