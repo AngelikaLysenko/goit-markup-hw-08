@@ -175,12 +175,12 @@
 .footer__contactus {
   display: inline-block;
 
-  @media screen and(min-width:480px) {
+  @media screen and(min-width:$mobile) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:$desktop) {
     margin-left: 93px;
     display: flex;
     flex-direction: column;
@@ -189,19 +189,19 @@
 }
 
 .footer__form {
-  @media screen and(min-width:480px) {
+  @media screen and(min-width:$mobile) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:$tablet) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:$desktop) {
     flex-direction: row;
   }
 }
@@ -209,11 +209,11 @@
 .footer__form-mail {
   margin-bottom: 20px;
 
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:$tablet) {
     align-items: center;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:$desktop) {
     margin-bottom: 0;
   }
 }
@@ -228,11 +228,11 @@
   border-radius: 4px;
   padding: 15px 0px 15px 16px;
 
-  @media screen and(min-width:480px) {
+  @media screen and(min-width:$mobile) {
     width: 450px;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:$desktop) {
     width: 358px;
     margin-right: 12px;
   }
@@ -269,7 +269,7 @@
     margin-top: 20px;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:$desktop) {
     margin-left: 12px;
     margin-top: 0;
   }

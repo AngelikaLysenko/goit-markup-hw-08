@@ -33,9 +33,10 @@
 
 .portfolio__button-item {
   margin-right: 8px;
+  margin-top: 15px;
   
-  @media screen and(min-width:$mobile) {
-    margin-top: 15px;
+  @media screen and(min-width:$tablet) {
+    margin-top: 0px;
   }
   
 }
