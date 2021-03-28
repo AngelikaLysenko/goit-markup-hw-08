@@ -25,6 +25,8 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 40px;
+ 
   @media screen and(min-width:$tablet) {
     margin-bottom: 34px;
     justify-content: center;
