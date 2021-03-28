@@ -1,6 +1,7 @@
 .section__feature-main {
   padding-top: 60px;
   padding-bottom: 60px;
+  
 
   @media screen and(min-width:$desktop) {
     padding-top: 94px;
@@ -10,7 +11,22 @@
 
 .container__feature {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0 15px;
+  border-bottom: 1px solid #ececec;
+
+  @media screen and(min-width:$mobile) {
+    max-width: 480px;
+  }
+
+  @media screen and(min-width:$tablet) {
+    max-width: 768px;
+  }
+
+  @media screen and(min-width:$desktop) {
+    max-width: 1200px;
+  }
 }
 
 .feature__title {
